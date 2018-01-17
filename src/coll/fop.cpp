@@ -7,7 +7,8 @@
 bool fop::create(coll_file *f) {
 
     this->fd = open(f->getpath(), O_CREAT | O_RDWR | O_APPEND);
-    char buf[50] = "fwfwrw";
+    char buf[50] = "this is another test";
     write(this->fd, buf, 50);
     close(this->fd);
+    delete this;
 }
