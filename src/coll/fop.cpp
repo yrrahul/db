@@ -4,7 +4,7 @@
 
 #include "fop.h"
 
-bool fop::create(coll_file *f) {
+bool fop::create(collection *f) {
 
     this->fd = open(f->getpath(), O_CREAT | O_RDWR | O_APPEND);
     char buf[50] = "this is another test";

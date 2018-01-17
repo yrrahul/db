@@ -5,7 +5,7 @@
 #ifndef NIMBLE_FILE_H
 #define NIMBLE_FILE_H
 
-#include "coll_file.h"
+#include "collection.h"
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -15,7 +15,7 @@ private:
     int fd;
     char buf[100];
 public:
-    bool create(coll_file *f);
+    bool create(collection *f);
 
 };
 
