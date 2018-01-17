@@ -3,7 +3,7 @@
 //
 
 #ifndef NIMBLE_SESS_OPEN_H
-#define NIMBLE_SESS_OPEN_H =
+#define NIMBLE_SESS_OPEN_H
 
 #include <string>
 #include <stdlib.h>
